@@ -7,16 +7,20 @@
     style="background-color: #121212"
   >
     <h3>Password Generator</h3>
-    <label for="length">Select the length of your password:</label>
-    <select name="length" id="length" class="form-control">
-      <option value="6">6 characters</option>
-      <option value="8">8 Characters</option>
-      <option value="10">10 Characters</option>
-      <option value="12">12 Characters</option>
-      <option value="14">14 Characters</option>
-      <option value="16">16 Characters</option>
-      <option value="18">18 Characters</option>
-    </select>
+    <br />
+    <label for="length">Select the length for your password </label>
+    <h6>betwen 1 - 100 characters:</h6>
+    <input
+      type="number"
+      name="length"
+      id="lenght"
+      min="1"
+      max="100"
+      value="1"
+      class="from-control"
+    />
+    <br />
+    <h6>Select the characters to include</h6>
     <div class="form-check form-switch my-2">
       <label for="uppercase" class="from-check-label">Uppercase</label>
       <input
@@ -44,6 +48,8 @@
         class="form-check-input"
       />
     </div>
+    <br />
+
     <button class="btn btn-outline-primary">Generate</button>
   </form>
 
